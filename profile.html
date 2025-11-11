@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css">
+    <title>My Account</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header_block">
+                <div class="logo">
+                    <a href="index.html">
+
+                        <img src="./images/header-logo.svg" alt="header-logo" />
+                    </a>
+                </div>
+                <div class="search_box">
+                    <input type="text" placeholder="Search for course" />
+                </div>
+                <div class="header_block2">
+                    <div>
+                        <a href="search.html">
+                            <img src="./images/basket.svg" alt="basket" />
+                        </a>
+                    </div>
+                    <a class="login_button" href="login.html">Login</a>
+                    <a class="sign_button" href="login.html">Sign up</a>
+                </div>
+                <button class="mobile_button"></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="account_title">My Account</h2>
+            <div class="profile_img">
+                <img src="./images/profile.svg" alt="profile">
+            </div>
+            <div class="tabs">
+                <button class="tab active" data-tab="profile">Profile</button>
+                <button class="tab" data-tab="personalisation">Personalisation</button>
+                <button class="tab" data-tab="account">Account</button>
+                <button class="tab" data-tab="payment">Payment Methods</button>
+                <button class="tab" data-tab="notifications">Notifications</button>
+                <button class="tab" data-tab="privacy">Privacy</button>
+            </div>
+            <div class="tabs_blok">
+                <div class="tab-content2 active" id="profile">
+                    <div class="search_boxx">
+                        <p>First Name</p>
+                        <input type="text" placeholder="Jonathan" />
+                        <hr>
+                    </div>
+                    <div class="search_boxx">
+                        <p>Last Name</p>
+                        <input type="text" placeholder="Doe" />
+                        <hr>
+                    </div>
+                    <div class="search_boxx">
+                        <p>Headline</p>
+                        <input type="text" placeholder="Headline" />
+                        <hr>
+                    </div>
+                    <div class="search_boxx">
+                        <p>Language</p>
+                        <input type="text" placeholder="English" />
+                        <hr>
+                    </div>
+                    <button class="save_button">Save</button>
+                </div>
+                <div class="tab-content2" id="personalisation">
+                    <p>Personalisation settings here.</p>
+                </div>
+                <div class="tab-content2" id="account">
+                    <p>Account details here.</p>
+                </div>
+                <div class="tab-content2" id="payment">
+                    <p>Payment methods here.</p>
+                </div>
+                <div class="tab-content2" id="notifications">
+                    <p>Notification preferences here.</p>
+                </div>
+                <div class="tab-content2" id="privacy">
+                    <p>Privacy settings here.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_blok">
+                <div>
+                    <img src="./images/footer-logo.svg" alt="">
+                </div>
+                <ul class="footer_blok2">
+                    <li class="footer_items">Web Programming</li>
+                    <li class="footer_items">Mobile Programming</li>
+                    <li class="footer_items">Java Beginner</li>
+                    <li class="footer_items">PHP Beginner</li>
+                </ul>
+                <ul class="footer_blok2">
+                    <li class="footer_items">Adobe Illustrator</li>
+                    <li class="footer_items">Photoshop</li>
+                    <li class="footer_items">JDesign Logo</li>
+                </ul>
+                <ul class="footer_blok2">
+                    <li class="footer_items">Writing Course</li>
+                    <li class="footer_items">Photography</li>
+                    <li class="footer_items">Video Making</li>
+                </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="footer_blok3">
+                <p>Copyright © MyCourse.io 2024. All Rights Reserved</p>
+                <div class="twitter_blok">
+                    <a href="https://en.wikipedia.org/wiki/Twitter" target="_blank">
+                        <img src="./images/twitter.svg" alt="twitter">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="./images/instagram.svg" alt="twitter">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="./images/facebooka.svg" alt="twitter">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const tabs = document.querySelectorAll(".tab");
+        const contents = document.querySelectorAll(".tab-content2");
+
+        tabs.forEach(tab => {
+            tab.addEventListener("click", () => {
+                tabs.forEach(t => t.classList.remove("active"));
+                contents.forEach(c => c.classList.remove("active"));
+                tab.classList.add("active");
+                const activeContent = document.getElementById(tab.dataset.tab);
+                if (activeContent) activeContent.classList.add("active");
+            });
+        });
+
+        const mobileBtn = document.querySelector(".mobile_button");
+        const headerBlock2 = document.querySelector(".header_block2");
+        const logo = document.querySelector(".logo");
+
+        mobileBtn.addEventListener("click", () => {
+            if (headerBlock2.style.display === "flex") {
+                headerBlock2.style.display = "none";
+                if (logo) logo.style.display = "block";
+            } else {
+                headerBlock2.style.display = "flex";
+                if (logo) logo.style.display = "none";
+            }
+        });
+    </script>
+</body>
+
+</html>

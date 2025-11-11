@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login_block {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.login_text {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.form_group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form_group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.form_group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form_group input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.login_button {
+  width: 100%;
+  padding: 12px;
+  background: #3dcbb1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.login_button:hover {
+  background-color: #0056b3;
+}
+
+.divider {
+  position: relative;
+  text-align: center;
+  margin: 25px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.divider span {
+  background: white;
+  padding: 0 15px;
+  position: relative;
+}
+
+.social_buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.social_button {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.social_button:hover {
+  background-color: #f8f9fa;
+}
+
+.social_button.facebook {
+  color: #1877f2;
+}
+
+.social_button.apple {
+  color: #000;
+}
+
+.social_button.google {
+  color: #db4437;
+}
+
+.signup_link {
+  font-size: 14px;
+  color: #666;
+}
+
+.signup_link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup_link a:hover {
+  text-decoration: underline;
+}
+.social_facebook {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 131%;
+  color: #fff;
+  border-radius: 14px;
+  padding: 10px 18px;
+  background: #4267b2;
+  cursor: pointer;
+}
+.social_button_apple {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 131%;
+  color: #fff;
+  border-radius: 14px;
+  padding: 10px 18px;
+  background: #1b1b1b;
+  cursor: pointer;
+}
+.social_button_google {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 131%;
+  color: #1b1b1b;
+  border: 1px solid rgba(27, 27, 27, 0.1);
+  border-radius: 14px;
+  padding: 10px 18px;
+  background-color: inherit;
+  cursor: pointer;
+}
+.social_facebook,
+.social_button_apple,
+.social_button_google {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 131%;
+  border-radius: 14px;
+  padding: 10px 18px 10px 45px;
+  display: inline-block;
+  position: relative;
+}
+
+.social_facebook {
+  color: #fff;
+  background: #4267b2;
+}
+
+.social_facebook::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-image: url("/images/facebook.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.social_button_apple {
+  color: #fff;
+  background: #1b1b1b;
+}
+
+.social_button_apple::before {
+  content: "";
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-image: url("/images/apple.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.social_button_google {
+  color: #1b1b1b;
+  border: 1px solid rgba(27, 27, 27, 0.1);
+  background-color: inherit;
+}
+
+.social_button_google::before {
+  content: "";
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-image: url("/images/google.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.error-message {
+  background-color: #ff3b3b;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  font-size: 14px;
+}
