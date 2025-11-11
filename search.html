@@ -294,6 +294,34 @@
             }
         });
     </script>
+    <script>
+  const select = document.querySelector(".select");
+  const coursesContainer = document.querySelector(".filter_blok2");
+
+  let courses = Array.from(coursesContainer.children);
+
+  select.addEventListener("change", (e) => {
+    const value = e.target.value;
+
+    courses = Array.from(coursesContainer.children);
+    const getPrice = (course) => {
+      const priceText = course.querySelector(".sale_title").textContent.trim();
+      const match = priceText.match(/\$([\d.]+)/);
+      return match ? parseFloat(match[1]) : 0;
+    };
+
+    if (value === "most-popular") {
+      courses.sort((a, b) => getPrice(b) - getPrice(a));
+    } else if (value === "newest") {
+      courses.sort(() => Math.random() - 0.5);
+    } else if (value === "top-rated") {
+      courses.sort((a, b) => getPrice(a) - getPrice(b));
+    }
+    coursesContainer.innerHTML = "";
+    courses.forEach(course => coursesContainer.appendChild(course));
+  });
+</script>
+
 </body>
 
 </html>
