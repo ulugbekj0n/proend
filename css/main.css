@@ -863,3 +863,8 @@ body {
   line-height: 131%;
   color: rgba(249, 249, 249, 0.6);
 }
+@media (max-width: 768px) {
+  .search_box{
+    display: none;
+  }
+}
