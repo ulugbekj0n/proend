@@ -81,6 +81,8 @@ body {
   width: 99px;
   height: 32px;
   background: #3dcbb1;
+  text-align: center;
+  align-items: center;
 }
 
 .search_box {
