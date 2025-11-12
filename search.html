@@ -55,54 +55,69 @@
                         <div class="filter-section">
                             <h3 class="section-title">Rating</h3>
                             <div class="rating-group">
-                                <label><input type="checkbox"> 4.5 & up (88K)</label>
-                                <label><input type="checkbox"> 4.0 & up (130K)</label>
-                                <label><input type="checkbox"> 3.5 & up (167K)</label>
+                                <label><input type="checkbox" data-filter="rating" value="4.5"> 4.5 & up (88K)</label>
+                                <label><input type="checkbox" data-filter="rating" value="4.0"> 4.0 & up (130K)</label>
+                                <label><input type="checkbox" data-filter="rating" value="3.5"> 3.5 & up (167K)</label>
                             </div>
                         </div>
                         <div class="filter-section">
                             <h3 class="section-title">Video Duration</h3>
                             <div class="checkbox-group">
-                                <label><input type="checkbox"> 0-2 Hours (9.4K)</label>
-                                <label><input type="checkbox"> 3-6 Hours (41K)</label>
-                                <label><input type="checkbox"> 6-17 Hours (63K)</label>
-                                <label><input type="checkbox"> 17+ Hours (49K)</label>
+                                <label><input type="checkbox" data-filter="duration" value="0-2"> 0-2 Hours
+                                    (9.4K)</label>
+                                <label><input type="checkbox" data-filter="duration" value="3-6"> 3-6 Hours
+                                    (41K)</label>
+                                <label><input type="checkbox" data-filter="duration" value="6-17"> 6-17 Hours
+                                    (63K)</label>
+                                <label><input type="checkbox" data-filter="duration" value="17+"> 17+ Hours
+                                    (49K)</label>
                             </div>
                         </div>
                         <div class="filter-section">
                             <h3 class="section-title">Categories</h3>
                             <div class="checkbox-group">
-                                <label><input type="checkbox"> Design (12K)</label>
-                                <label><input type="checkbox"> Programming (14K)</label>
-                                <label><input type="checkbox"> Business & Marketing (809)</label>
-                                <label><input type="checkbox"> Finance (548)</label>
-                                <label><input type="checkbox"> Music & Film (1.2K)</label>
-                                <label><input type="checkbox"> Health & Fitness (2.3K)</label>
-                                <label><input type="checkbox"> Writing (763)</label>
+                                <label><input type="checkbox" data-filter="category" value="design"> Design
+                                    (12K)</label>
+                                <label><input type="checkbox" data-filter="category" value="programming"> Programming
+                                    (14K)</label>
+                                <label><input type="checkbox" data-filter="category" value="business"> Business &
+                                    Marketing (809)</label>
+                                <label><input type="checkbox" data-filter="category" value="finance"> Finance
+                                    (548)</label>
+                                <label><input type="checkbox" data-filter="category" value="music"> Music & Film
+                                    (1.2K)</label>
+                                <label><input type="checkbox" data-filter="category" value="health"> Health & Fitness
+                                    (2.3K)</label>
+                                <label><input type="checkbox" data-filter="category" value="writing"> Writing
+                                    (763)</label>
                             </div>
                         </div>
                         <div class="filter-section">
                             <h3 class="section-title">Level</h3>
                             <div class="checkbox-group">
-                                <label><input type="checkbox"> All Levels</label>
-                                <label><input type="checkbox"> Beginner</label>
-                                <label><input type="checkbox"> Intermediate</label>
-                                <label><input type="checkbox"> Advanced</label>
+                                <label><input type="checkbox" data-filter="level" value="all"> All Levels</label>
+                                <label><input type="checkbox" data-filter="level" value="beginner"> Beginner</label>
+                                <label><input type="checkbox" data-filter="level" value="intermediate">
+                                    Intermediate</label>
+                                <label><input type="checkbox" data-filter="level" value="advanced"> Advanced</label>
                             </div>
                         </div>
                         <div class="filter-section">
                             <h3 class="section-title">Language</h3>
                             <div class="checkbox-group">
-                                <label><input type="checkbox"> English</label> <br>
-                                <label><input type="checkbox"> Spanish</label> <br>
-                                <label><input type="checkbox"> French</label> <br>
-                                <label><input type="checkbox"> German</label> <br>
+                                <label><input type="checkbox" data-filter="language" value="english"> English</label>
+                                <br>
+                                <label><input type="checkbox" data-filter="language" value="spanish"> Spanish</label>
+                                <br>
+                                <label><input type="checkbox" data-filter="language" value="french"> French</label> <br>
+                                <label><input type="checkbox" data-filter="language" value="german"> German</label> <br>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div class="select_blok">
-                            <h2 class="select_title">Showing 2,312 results of <span class="select_span">UI Design</span>
+                            <h2 class="select_title">Showing <span id="result-count">2,312</span> results of <span
+                                    class="select_span">UI Design</span>
                             </h2>
                             <select class="select" name="Popular" id="popular">
                                 <option value="most-popular">Most Popular</option>
@@ -111,114 +126,125 @@
                             </select>
                         </div>
                         <div class="filter_blok2">
-                            <div>
-                                <img src="./images/javascript.svg" alt="rasm">
+                            <div data-rating="4.5" data-duration="3-6" data-category="design" data-level="beginner"
+                                data-language="english">
+                                <img src="./images/desgn.svg" alt="rasm">
                                 <h3 class="Adobe_title">Adobe Illustrator Scretch Course</h3>
                                 <img src="./images/kitani.svg" alt="kitani"> <br>
                                 <p style="width: 285px;">More than 8yr Experience as Illustrator. Learn how to becoming
                                     professional Illustrator Now...</p>
                                 <img src="./images/stars.svg" alt="stars">
-                                <h2 class="sale_title">$24.92 <span class="span_title">$32.90</span></h2>
+                                <h2 class="sale_title">$22.92 <span class="span_title">$32.90</span></h2>
                             </div>
-                            <div>
+                            <div data-rating="4.0" data-duration="6-17" data-category="programming"
+                                data-level="intermediate" data-language="english">
                                 <img src="./images/react-native.svg" alt="rasm">
-                                <h3 class="Adobe_title">Adobe Illustrator Scretch Course</h3>
+                                <h3 class="Adobe_title">Bootcamp  Vue.js Web Framework</h3>
                                 <img src="./images/kitani.svg" alt="kitani"> <br>
                                 <p style="width: 285px; ">
-                                    More than 8yr Experience as Illustrator. Learn how to becoming
+                                    Learn how to make web application with Vue.js Framework.</p>
+                                <img src="./images/stars.svg" alt="stars">
+                                <h2 class="sale_title">$74.92 <span class="span_title">$102.90</span></h2>
+                            </div>
+                            <div data-rating="3.5" data-duration="17+" data-category="business" data-level="advanced"
+                                data-language="spanish">
+                                <img src="./images/kompyuter.svg" alt="rasm">
+                                <h3 class="Adobe_title">Design Fundamentals</h3>
+                                <img src="./images/kitani.svg" alt="kitani"> <br>
+                                <p style="width: 285px;">More than 8yr Experience as Illustrator. Learn how to becoming
                                     professional Illustrator Now...</p>
                                 <img src="./images/stars.svg" alt="stars">
-                                <h2 class="sale_title">$24.92 <span class="span_title">$32.90</span></h2>
+                                <h2 class="sale_title">$40.92 <span class="span_title">$52.90</span></h2>
                             </div>
-                            <div>
+                            <div data-rating="4.5" data-duration="0-2" data-category="finance" data-level="beginner"
+                                data-language="english">
+                                <img src="./images/make.svg" alt="rasm">
+                                <h3 class="Adobe_title">Adobe Illustrator Scretch Course</h3>
+                                <img src="./images/kitani.svg" alt="kitani"> <br>
+                                <p style="width: 285px;">More than 8yr Experience as Illustrator. Learn how to becoming
+                                    professional Illustrator Now...</p>
+                                <img src="./images/stars.svg" alt="stars">
+                                <h2 class="sale_title">$29.92 <span class="span_title">$87.90</span></h2>
+                            </div>
+                            <div data-rating="4.0" data-duration="3-6" data-category="music" data-level="intermediate"
+                                data-language="french">
                                 <img src="./images/inavation.svg" alt="rasm">
-                                <h3 class="Adobe_title">Adobe Illustrator Scretch Course</h3>
+                                <h3 class="Adobe_title">Music Production Course</h3>
                                 <img src="./images/kitani.svg" alt="kitani"> <br>
                                 <p style="width: 285px;">More than 8yr Experience as Illustrator. Learn how to becoming
                                     professional Illustrator Now...</p>
                                 <img src="./images/stars.svg" alt="stars">
-                                <h2 class="sale_title">$24.92 <span class="span_title">$32.90</span></h2>
+                                <h2 class="sale_title">$65.92 <span class="span_title">$82.90</span></h2>
                             </div>
-                            <div>
+                            <div data-rating="3.5" data-duration="6-17" data-category="health" data-level="advanced"
+                                data-language="german">
                                 <img src="./images/compyuter.svg" alt="rasm">
-                                <h3 class="Adobe_title">Adobe Illustrator Scretch Course</h3>
+                                <h3 class="Adobe_title">Fitness Training Course</h3>
                                 <img src="./images/kitani.svg" alt="kitani"> <br>
                                 <p style="width: 285px;">More than 8yr Experience as Illustrator. Learn how to becoming
                                     professional Illustrator Now...</p>
                                 <img src="./images/stars.svg" alt="stars">
                                 <h2 class="sale_title">$24.92 <span class="span_title">$32.90</span></h2>
                             </div>
-                            <div>
+                            <div data-rating="4.5" data-duration="17+" data-category="writing" data-level="beginner"
+                                data-language="english">
                                 <img src="./images/inavation.svg" alt="rasm">
-                                <h3 class="Adobe_title">Adobe Illustrator Scretch Course</h3>
+                                <h3 class="Adobe_title">Creative Writing Course</h3>
                                 <img src="./images/kitani.svg" alt="kitani"> <br>
                                 <p style="width: 285px;">More than 8yr Experience as Illustrator. Learn how to becoming
                                     professional Illustrator Now...</p>
                                 <img src="./images/stars.svg" alt="stars">
                                 <h2 class="sale_title">$24.92 <span class="span_title">$32.90</span></h2>
                             </div>
-                            <div>
-                                <img src="./images/compyuter.svg" alt="rasm">
-                                <h3 class="Adobe_title">Adobe Illustrator Scretch Course</h3>
+                            <div data-rating="4.0" data-duration="0-2" data-category="design" data-level="intermediate"
+                                data-language="spanish">
+                                <img src="./images/ios.svg" alt="rasm">
+                                <h3 class="Adobe_title">Advanced Design Course</h3>
                                 <img src="./images/kitani.svg" alt="kitani"> <br>
                                 <p style="width: 285px;">More than 8yr Experience as Illustrator. Learn how to becoming
                                     professional Illustrator Now...</p>
                                 <img src="./images/stars.svg" alt="stars">
                                 <h2 class="sale_title">$24.92 <span class="span_title">$32.90</span></h2>
                             </div>
-                            <div>
+                            <div data-rating="3.5" data-duration="3-6" data-category="programming" data-level="advanced"
+                                data-language="french">
                                 <img src="./images/inavation.svg" alt="rasm">
-                                <h3 class="Adobe_title">Adobe Illustrator Scretch Course</h3>
+                                <h3 class="Adobe_title">JavaScript Advanced Course</h3>
                                 <img src="./images/kitani.svg" alt="kitani"> <br>
                                 <p style="width: 285px;">More than 8yr Experience as Illustrator. Learn how to becoming
                                     professional Illustrator Now...</p>
                                 <img src="./images/stars.svg" alt="stars">
                                 <h2 class="sale_title">$24.92 <span class="span_title">$32.90</span></h2>
                             </div>
-                            <div>
+                            <div data-rating="4.5" data-duration="6-17" data-category="business" data-level="beginner"
+                                data-language="german">
                                 <img src="./images/compyuter.svg" alt="rasm">
-                                <h3 class="Adobe_title">Adobe Illustrator Scretch Course</h3>
+                                <h3 class="Adobe_title">Marketing Fundamentals</h3>
                                 <img src="./images/kitani.svg" alt="kitani"> <br>
                                 <p style="width: 285px;">More than 8yr Experience as Illustrator. Learn how to becoming
                                     professional Illustrator Now...</p>
                                 <img src="./images/stars.svg" alt="stars">
                                 <h2 class="sale_title">$24.92 <span class="span_title">$32.90</span></h2>
                             </div>
-                            <div>
-                                <img src="./images/inavation.svg" alt="rasm">
-                                <h3 class="Adobe_title">Adobe Illustrator Scretch Course</h3>
+                            <div data-rating="4.0" data-duration="17+" data-category="finance" data-level="intermediate"
+                                data-language="english">
+                                <img src="./images/website.svg" alt="rasm">
+                                <h3 class="Adobe_title">Investment Strategies</h3>
                                 <img src="./images/kitani.svg" alt="kitani"> <br>
                                 <p style="width: 285px;">More than 8yr Experience as Illustrator. Learn how to becoming
                                     professional Illustrator Now...</p>
                                 <img src="./images/stars.svg" alt="stars">
-                                <h2 class="sale_title">$24.92 <span class="span_title">$32.90</span></h2>
+                                <h2 class="sale_title">$74.92 <span class="span_title">$92.90</span></h2>
                             </div>
-                            <div>
+                            <div data-rating="3.5" data-duration="0-2" data-category="music" data-level="advanced"
+                                data-language="spanish">
                                 <img src="./images/compyuter.svg" alt="rasm">
-                                <h3 class="Adobe_title">Adobe Illustrator Scretch Course</h3>
+                                <h3 class="Adobe_title">Film Making Basics</h3>
                                 <img src="./images/kitani.svg" alt="kitani"> <br>
                                 <p style="width: 285px;">More than 8yr Experience as Illustrator. Learn how to becoming
                                     professional Illustrator Now...</p>
                                 <img src="./images/stars.svg" alt="stars">
-                                <h2 class="sale_title">$24.92 <span class="span_title">$32.90</span></h2>
-                            </div>
-                            <div>
-                                <img src="./images/inavation.svg" alt="rasm">
-                                <h3 class="Adobe_title">Adobe Illustrator Scretch Course</h3>
-                                <img src="./images/kitani.svg" alt="kitani"> <br>
-                                <p style="width: 285px;">More than 8yr Experience as Illustrator. Learn how to becoming
-                                    professional Illustrator Now...</p>
-                                <img src="./images/stars.svg" alt="stars">
-                                <h2 class="sale_title">$24.92 <span class="span_title">$32.90</span></h2>
-                            </div>
-                            <div>
-                                <img src="./images/compyuter.svg" alt="rasm">
-                                <h3 class="Adobe_title">Adobe Illustrator Scretch Course</h3>
-                                <img src="./images/kitani.svg" alt="kitani"> <br>
-                                <p style="width: 285px;">More than 8yr Experience as Illustrator. Learn how to becoming
-                                    professional Illustrator Now...</p>
-                                <img src="./images/stars.svg" alt="stars">
-                                <h2 class="sale_title">$24.92 <span class="span_title">$32.90</span></h2>
+                                <h2 class="sale_title">$454.92 <span class="span_title">$521.90</span></h2>
                             </div>
                         </div>
                     </div>
@@ -279,6 +305,7 @@
             </div>
         </div>
     </footer>
+
     <script>
         const mobileBtn = document.querySelector(".mobile_button");
         const headerBlock2 = document.querySelector(".header_block2");
@@ -293,35 +320,106 @@
                 if (logo) logo.style.display = "none";
             }
         });
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterCheckboxes = document.querySelectorAll('input[type="checkbox"][data-filter]');
+            const clearBtn = document.querySelector('.clear-btn');
+            const coursesContainer = document.querySelector('.filter_blok2');
+            const courses = Array.from(coursesContainer.children);
+            const resultCount = document.getElementById('result-count');
+            const select = document.querySelector('.select');
+            let activeFilters = {
+                rating: [],
+                duration: [],
+                category: [],
+                level: [],
+                language: []
+            };
+            updateCourseDisplay();
+            filterCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function () {
+                    const filterType = this.getAttribute('data-filter');
+                    const filterValue = this.value;
+
+                    if (this.checked) {
+                        if (!activeFilters[filterType].includes(filterValue)) {
+                            activeFilters[filterType].push(filterValue);
+                        }
+                    } else {
+
+                        activeFilters[filterType] = activeFilters[filterType].filter(
+                            value => value !== filterValue
+                        );
+                    }
+
+                    updateCourseDisplay();
+                });
+            });
+            clearBtn.addEventListener('click', function () {
+                filterCheckboxes.forEach(checkbox => {
+                    checkbox.checked = false;
+                });
+                activeFilters = {
+                    rating: [],
+                    duration: [],
+                    category: [],
+                    level: [],
+                    language: []
+                };
+                updateCourseDisplay();
+            });
+            select.addEventListener('change', function () {
+                updateCourseDisplay();
+            });
+            function updateCourseDisplay() {
+                let filteredCourses = courses.filter(course => {
+                    for (const filterType in activeFilters) {
+                        if (activeFilters[filterType].length > 0) {
+                            const courseValue = course.getAttribute(`data-${filterType}`);
+                            if (filterType === 'rating') {
+                                const courseRating = parseFloat(courseValue);
+                                const hasMatchingRating = activeFilters.rating.some(ratingFilter => {
+                                    const minRating = parseFloat(ratingFilter);
+                                    return courseRating >= minRating;
+                                });
+
+                                if (!hasMatchingRating) return false;
+                            } else {
+                                if (!activeFilters[filterType].includes(courseValue)) {
+                                    return false;
+                                }
+                            }
+                        }
+                    }
+
+                    return true;
+                });
+
+                const sortValue = select.value;
+                if (sortValue === 'most-popular') {
+                    filteredCourses.sort((a, b) => {
+                        const priceA = parseFloat(a.querySelector('.sale_title').textContent.match(/\$([\d.]+)/)[1]);
+                        const priceB = parseFloat(b.querySelector('.sale_title').textContent.match(/\$([\d.]+)/)[1]);
+                        return priceB - priceA;
+                    });
+                } else if (sortValue === 'newest') {
+                    filteredCourses.sort(() => Math.random() - 0.5);
+                } else if (sortValue === 'top-rated') {
+                    filteredCourses.sort((a, b) => {
+                        const ratingA = parseFloat(a.getAttribute('data-rating'));
+                        const ratingB = parseFloat(b.getAttribute('data-rating'));
+                        return ratingB - ratingA;
+                    });
+                }
+
+                resultCount.textContent = filteredCourses.length.toLocaleString();
+
+                coursesContainer.innerHTML = '';
+                filteredCourses.forEach(course => {
+                    coursesContainer.appendChild(course);
+                });
+            }
+        });
     </script>
-    <script>
-  const select = document.querySelector(".select");
-  const coursesContainer = document.querySelector(".filter_blok2");
-
-  let courses = Array.from(coursesContainer.children);
-
-  select.addEventListener("change", (e) => {
-    const value = e.target.value;
-
-    courses = Array.from(coursesContainer.children);
-    const getPrice = (course) => {
-      const priceText = course.querySelector(".sale_title").textContent.trim();
-      const match = priceText.match(/\$([\d.]+)/);
-      return match ? parseFloat(match[1]) : 0;
-    };
-
-    if (value === "most-popular") {
-      courses.sort((a, b) => getPrice(b) - getPrice(a));
-    } else if (value === "newest") {
-      courses.sort(() => Math.random() - 0.5);
-    } else if (value === "top-rated") {
-      courses.sort((a, b) => getPrice(a) - getPrice(b));
-    }
-    coursesContainer.innerHTML = "";
-    courses.forEach(course => coursesContainer.appendChild(course));
-  });
-</script>
-
 </body>
 
 </html>
